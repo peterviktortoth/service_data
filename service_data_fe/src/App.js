@@ -10,7 +10,7 @@ function App() {
 
     const handleSubmit = async () => {
         const apiName = 'serviceDataAPI'; // The name of the API
-        const path = '/yourResourcePath'; // The path you have configured for your API
+        const path = '/items'; // The path you have configured for your API
         const init = {
             body: { content: inputValue }, // The data you want to send
             headers: {}  // Optional headers
