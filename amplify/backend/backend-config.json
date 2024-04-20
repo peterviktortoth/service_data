@@ -1,0 +1,49 @@
+{
+  "api": {
+    "serviceDataAPI": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "Name",
+            "Arn"
+          ],
+          "category": "function",
+          "resourceName": "servicedata527a0dc4"
+        }
+      ],
+      "providerPlugin": "awscloudformation",
+      "service": "API Gateway"
+    }
+  },
+  "function": {
+    "servicedata527a0dc4": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_servicedata527a0dc4_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "servicedata527a0dc4"
+        }
+      ]
+    },
+    "AMPLIFY_function_servicedata527a0dc4_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "servicedata527a0dc4"
+        }
+      ]
+    }
+  },
+  "storage": {
+    "serviceDataTable": {
+      "providerPlugin": "awscloudformation",
+      "service": "DynamoDB"
+    }
+  }
+}

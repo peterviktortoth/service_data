@@ -1,0 +1,14 @@
+{
+  "resourceName": "serviceDataTable",
+  "tableName": "serviceDataTable",
+  "partitionKey": {
+    "fieldName": "primary_key",
+    "fieldType": "string"
+  },
+  "sortKey": {
+    "fieldName": "timestamp",
+    "fieldType": "number"
+  },
+  "gsi": [],
+  "triggerFunctions": []
+}
